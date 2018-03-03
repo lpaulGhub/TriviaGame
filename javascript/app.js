@@ -14,16 +14,11 @@ $(document).ready(function () {
     // that is triggered by the start button
     // and generates the game HTML
     $("body").on("click", ".start-button", function(event){
-        
-        // clickSound.play();
         generateHTML();
         timerControl();
     });
     
     $("body").on("click", ".answer", function(event){
-
-        // clickSound.play();
-
         selectedAnswer = $(this).text();
         if (selectedAnswer === correctAnswers[questionNum]) {
             clearInterval(timeClock);
@@ -36,7 +31,6 @@ $(document).ready(function () {
     });
     
     $("body").on("click", ".reset-button", function(event){
-        // clickSound.play();
         resetGame();
     });
     
@@ -174,14 +168,14 @@ var answerArray = [
 ];
 
 var imageArray = [
-    "<img class='center-block img-right' src='assets/images/HP1.gif'>",
-    "<img class='center-block img-right' src='assets/images/HP2.gif'>",
-    "<img class='center-block img-right' src='assets/images/HP3.gif'>",
-    "<img class='center-block img-right' src='assets/images/HP4.gif'>",
-    "<img class='center-block img-right' src='assets/images/HP5.gif'>",
-    "<img class='center-block img-right' src='assets/images/HP6.gif'>",
-    "<img class='center-block img-right' src='assets/images/HP7.gif'>",
-    "<img class='center-block img-right' src='assets/images/HP8.gif'>"
+    "<img class='center-block img-right' src='images/HP1.gif'>",
+    "<img class='center-block img-right' src='images/HP2.gif'>",
+    "<img class='center-block img-right' src='images/HP3.gif'>",
+    "<img class='center-block img-right' src='images/HP4.gif'>",
+    "<img class='center-block img-right' src='images/HP5.gif'>",
+    "<img class='center-block img-right' src='images/HP6.gif'>",
+    "<img class='center-block img-right' src='images/HP7.gif'>",
+    "<img class='center-block img-right' src='images/HP8.gif'>"
 ];
 
 var correctAnswers = [
@@ -195,4 +189,4 @@ var correctAnswers = [
     "C. The Leaky Cauldron"
 ];
 
-// var clickSound = new Audio("sound/button-click.mp3");
+
