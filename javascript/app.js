@@ -82,7 +82,7 @@ function generateLossDueToTimeOut() {
     gameHTML = 
         "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + 
         "<p class='text-center'>You ran out of time! The correct answer was: " + correctAnswers[questionNum] + "</p>" + 
-        "<img class='rounded mx-auto d-block img-wrong' src='assets/images/wrong.png'>";
+        "<img class='rounded mx-auto d-block img-wrong' src='images/wrong.png'>";
     
     $(".mainArea").html(gameHTML);
     setTimeout(gamePause, 4000);  //  4 seconds
@@ -106,7 +106,7 @@ function generateLoss() {
     gameHTML = 
         "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + 
         "<p class='text-center'>Wrong! The correct answer is: " + correctAnswers[questionNum] + "</p>" + 
-        "<img class='rounded mx-auto d-block img-wrong' src='assets/images/wrong.png'>";
+        "<img class='rounded mx-auto d-block img-wrong' src='images/wrong.png'>";
     
     $(".mainArea").html(gameHTML);
     setTimeout(gamePause, 4000);  //  4 seconds
